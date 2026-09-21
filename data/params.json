@@ -1,0 +1,17 @@
+{
+  "_comment": "Synced from otcdesks.cash/dividends — update when the program's aggregates shift. Live numbers (wallet SOL, prices, balances) are always fetched on-chain; these are the aggregates a browser cannot compute alone.",
+  "as_of": "2026-09-21",
+  "dividend_wallet": "94v857jGb4z4nWEKqGizrNM9gD68n2Wnfot6dbbtLVnk",
+  "otc_mint": "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump",
+  "min_usd": 20,
+  "round_every_hours": 12,
+  "eligible_total_otc": 603700000,
+  "eligible_holders": 2792,
+  "paid_all_time_sol": 80.9529,
+  "rounds_all_time": 16,
+  "dvdn": {
+    "mint": null,
+    "multiplier": 2,
+    "status": "launching"
+  }
+}
