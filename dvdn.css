@@ -1,10 +1,12 @@
 /* OTC DVDN — components on the OTC design tokens (theirs.css). Light-first
    to match otcdesks.cash today; every token has a dark variant there too. */
 
-.dv-shell { max-width: 1020px; margin: 0 auto; padding: 0 18px 70px; }
+.dv-shell { max-width: 1080px; margin: 0 auto; padding: 0 30px 90px; }
 
 /* header */
-.dv-header { display: flex; align-items: center; gap: 10px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.dv-header { display: flex; align-items: center; gap: 12px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+ a, button { -webkit-tap-highlight-color: transparent; }
+ .dv-section, #collect, #how, #multiplier, #verify { scroll-margin-top: 24px; }
 .dv-brand { display: flex; align-items: center; gap: 9px; text-decoration: none; color: var(--ink); flex-shrink: 0; }
 .dv-brand-logo { display: block; }
 [data-theme="dark"] .dv-brand-logo, [data-theme="dark"] .dv-foot-brand img { filter: invert(1) hue-rotate(180deg); }
@@ -21,14 +23,15 @@
 .dv-cta:hover { filter: brightness(1.07); }
 
 /* hero */
-.dv-hero { padding: 44px 0 8px; }
-.dv-h1 { font-size: clamp(30px, 5vw, 44px); font-weight: 800; letter-spacing: -.02em; margin: 0 0 12px; }
+.dv-hero { padding: 60px 0 10px; }
+.dv-h1 { font-size: clamp(27px, 5.4vw, 46px); font-weight: 800; letter-spacing: -.02em; margin: 0 0 14px; }
 .dv-accent { color: var(--brand); }
-.dv-sub { color: var(--muted); max-width: 640px; line-height: 1.65; margin: 0 0 26px; }
-.dv-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
-.dv-stat { border: 1px solid var(--frame); border-radius: 14px; background: var(--well); padding: 14px 16px; display: flex; flex-direction: column; gap: 3px; }
+.dv-sub { color: var(--muted); max-width: 660px; line-height: 1.75; font-size: 14.5px; margin: 0 0 36px; }
+.dv-stats { display: grid; grid-template-columns: 1.35fr 1fr 1fr 1fr; gap: 14px; }
+.dv-stat { border: 0; border-radius: 16px; background: var(--well); padding: 18px 20px; display: flex; flex-direction: column; gap: 5px; }
+.dv-stat-sub { font-size: 11px; color: var(--muted); opacity: .8; }
 .dv-stat-wide { grid-column: span 1; }
-.dv-stat-n { font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.dv-stat-n { font-size: 25px; font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1.15; }
 .dv-stat-n small { font-size: 12px; color: var(--muted); font-weight: 600; }
 .dv-stat-l { font-size: 11.5px; color: var(--muted); }
 .dv-stat-s { font-size: 11px; color: var(--phos); font-variant-numeric: tabular-nums; }
@@ -37,25 +40,25 @@
 .dv-note { color: var(--muted); opacity: .75; font-weight: 400; }
 
 /* sections */
-.dv-section { padding-top: 46px; }
-.dv-h2 { font-size: 21px; font-weight: 800; letter-spacing: -.01em; margin: 0 0 8px; }
-.dv-subtle { color: var(--muted); font-size: 13.5px; max-width: 620px; margin: 0 0 18px; line-height: 1.6; }
+.dv-section { padding-top: 66px; }
+.dv-h2 { font-size: 22px; font-weight: 800; letter-spacing: -.01em; margin: 0 0 10px; }
+.dv-subtle { color: var(--muted); font-size: 13.5px; max-width: 640px; margin: 0 0 22px; line-height: 1.7; }
 
 /* lookup */
-.dv-lookup { border: 1px solid var(--frame); border-radius: 16px; background: var(--well); padding: 18px; }
+.dv-lookup { border: 0; border-radius: 18px; background: var(--well); padding: 24px; }
 .dv-lookup-row { display: flex; gap: 10px; }
-.dv-input { flex: 1; min-width: 0; border: 1px solid var(--frame); border-radius: 10px; background: var(--paper); color: var(--ink); padding: 11px 13px; font-size: 13px; font-family: ui-monospace, monospace; }
+.dv-input { flex: 1; min-width: 0; border: 1px solid var(--frame); border-radius: 11px; background: var(--paper); color: var(--ink); padding: 13px 15px; font-size: 16px; font-family: ui-monospace, monospace; }
 .dv-input:focus { outline: none; border-color: var(--brand); }
-.dv-btn { border: 0; border-radius: 10px; background: var(--brand); color: #fff; font-weight: 700; font-size: 13px; padding: 11px 22px; cursor: pointer; }
+.dv-btn { border: 0; border-radius: 11px; background: var(--brand); color: #fff; font-weight: 700; font-size: 14px; padding: 13px 26px; cursor: pointer; min-height: 44px; }
 .dv-btn:disabled { opacity: .5; cursor: default; }
-.dv-lookup-out { margin-top: 18px; border-top: 1px solid var(--line); padding-top: 18px; }
-.dv-out-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 14px; margin-bottom: 18px; }
+.dv-lookup-out { margin-top: 22px; border-top: 1px solid var(--line); padding-top: 22px; }
+.dv-out-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 18px; margin-bottom: 22px; }
 .dv-lab { font-size: 11px; color: var(--muted); letter-spacing: .04em; }
 .dv-big { font-size: 19px; font-weight: 800; font-variant-numeric: tabular-nums; margin-top: 2px; }
 .dv-elig-yes { color: var(--phos); }
 .dv-elig-no { color: var(--alert); }
 .dv-due { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.dv-due-main, .dv-due-boost { border: 1px solid var(--frame); border-radius: 12px; background: var(--paper); padding: 14px 16px; }
+.dv-due-main, .dv-due-boost { border: 1px solid var(--frame); border-radius: 14px; background: var(--paper); padding: 18px 20px; }
 .dv-due-boost { border-style: dashed; }
 .dv-huge { font-size: 26px; font-weight: 800; font-variant-numeric: tabular-nums; margin-top: 4px; }
 .dv-fine { font-size: 11.5px; color: var(--muted); margin: 14px 0 0; line-height: 1.6; }
@@ -63,7 +66,7 @@
 
 /* steps */
 .dv-steps { display: flex; align-items: stretch; gap: 10px; flex-wrap: wrap; }
-.dv-step { flex: 1 1 170px; border: 1px solid var(--frame); border-radius: 12px; background: var(--well); padding: 14px; font-size: 13px; color: var(--ink); line-height: 1.5; }
+.dv-step { flex: 1 1 175px; border: 0; border-radius: 14px; background: var(--well); padding: 17px 18px; font-size: 13px; color: var(--ink); line-height: 1.55; }
 .dv-step p { margin: 6px 0 0; }
 .dv-step-n { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--ink); color: var(--paper); font-size: 11px; font-weight: 800; }
 .dv-step-hi { border-color: var(--brand); }
@@ -71,7 +74,7 @@
 .dv-step-arrow { align-self: center; color: var(--muted); }
 
 /* multiplier */
-.dv-mult { display: flex; gap: 18px; border: 1px solid var(--brand); border-radius: 16px; padding: 18px; background: var(--well); align-items: center; }
+.dv-mult { display: flex; gap: 22px; border: 1px solid var(--brand); border-radius: 18px; padding: 24px; background: var(--well); align-items: center; }
 .dv-mult-badge { flex-shrink: 0; width: 74px; height: 74px; border-radius: 50%; background: var(--brand); color: #fff; display: grid; place-items: center; font-size: 26px; font-weight: 800; }
 .dv-mult-body p { margin: 0 0 8px; font-size: 14px; line-height: 1.6; }
 .dv-mult-body p:last-child { margin: 0; }
@@ -84,15 +87,30 @@
 .dv-code a:hover { color: var(--brand); }
 
 /* footer */
-.dv-footer { margin-top: 60px; border-top: 1px solid var(--line); padding-top: 20px; }
+.dv-footer { margin-top: 76px; border-top: 1px solid var(--line); padding-top: 24px; display: flex; flex-direction: column; gap: 10px; }
 .dv-foot-brand { display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 12px; letter-spacing: .07em; }
 .dv-foot-line { color: var(--muted); font-size: 11.5px; line-height: 1.65; max-width: 640px; }
 .dv-foot-line a { color: var(--muted); }
 
 @media (max-width: 640px) {
   .dv-nav { display: none; }
+  .dv-cta { display: none; }
+  .dv-shell { padding: 0 20px 70px; }
+  .dv-hero { padding: 40px 0 6px; }
+  .dv-section { padding-top: 50px; }
+  .dv-stats { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .dv-stat-wide { grid-column: 1 / -1; }
+  .dv-stats .dv-stat:last-child { grid-column: 1 / -1; }
+  .dv-stat { padding: 15px 16px; }
+  .dv-stat-n { font-size: 21px; }
   .dv-due { grid-template-columns: 1fr; }
-  .dv-mult { flex-direction: column; text-align: center; }
+  .dv-mult { flex-direction: column; text-align: center; padding: 20px; }
+  .dv-step { flex: 1 1 100%; }
+  .dv-step-arrow { display: none; }
+  .dv-lookup { padding: 18px; }
+  .dv-lookup-row { flex-direction: column; }
+  .dv-btn { width: 100%; }
+  .dv-brand-word { font-size: 13px; }
 }
 
 /* sidebar (mirrors otcdesks.cash) */
