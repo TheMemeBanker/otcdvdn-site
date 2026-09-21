@@ -10,8 +10,8 @@
   "paid_all_time_sol": 80.9529,
   "rounds_all_time": 16,
   "dvdn": {
-    "mint": null,
+    "mint": "Cw5KGt7dWwbPLRGEVDwt5oqhWrfju1YpCyqYsj4Tpump",
     "multiplier": 2,
-    "status": "launching"
+    "status": "live"
   }
 }
