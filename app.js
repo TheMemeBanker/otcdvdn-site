@@ -57,7 +57,7 @@ async function boot() {
     $("dvdnMint").replaceChildren(a);
     $("multStatus").textContent = "This desk reads your $DVDN balance from the chain and applies the multiplier to your displayed payout automatically.";
     const pill = $("dvdnTokenLink");
-    pill.href = `https://solscan.io/token/${P.dvdn.mint}`;
+    pill.href = `https://pump.fun/coin/${P.dvdn.mint}`;
     pill.removeAttribute("aria-disabled");
     pill.removeAttribute("title");
     pill.target = "_blank"; pill.rel = "noopener";
