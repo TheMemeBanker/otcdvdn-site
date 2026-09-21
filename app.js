@@ -147,3 +147,12 @@ $("themeBtn").addEventListener("click", () => {
 });
 
 boot();
+
+// sidebar drawer (mobile)
+const side = document.getElementById("sidebar");
+const scrim = document.getElementById("sideScrim");
+document.getElementById("sideToggle").addEventListener("click", () => {
+  const open = side.classList.toggle("open");
+  scrim.hidden = !open;
+});
+scrim.addEventListener("click", () => { side.classList.remove("open"); scrim.hidden = true; });
