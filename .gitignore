@@ -1,0 +1,4 @@
+gen_*.py
+preview-*.png
+__pycache__/
+.DS_Store
